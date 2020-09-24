@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFuntion()">Try It</button>
+    <p id="demo">Hello WOrld!</p>
+    <p id="concat"></p>
+    <button onclick="myfunctiion()">Change the Text</button>
+    <p id="replace">Hello World! and World! </p>
+    <p id="demo0"></p>
+    <script>
+        function myFuntion() {
+            var txt = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = txt.toUpperCase();
+        }
+        function myfunctiion() {
+            var text1 = document.getElementById("replace").innerHTML;
+            var text2 = text1.replace(/World!/g, "People!");
+            document.getElementById("replace").innerHTML = text2;
+        }
+        var txt1 = "John";
+        var txt2 = "Joy";
+        var txt3 = txt1.concat(" ",txt2);
+        document.getElementById("concat").innerHTML = txt3;
+        var myNumber = 2; 
+var txt = "";
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo0").innerHTML = txt;
+    </script>
+    
+
+</body>
+</html>
